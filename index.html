@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaviya National Institute of Technology Jaipur</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/mnit-logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/mnit-logo.png" alt="MNIT Logo">
+            <div>
+                <h2>Malaviya National Institute of Technology Jaipur</h2>
+                <h5>(An Institute of National Importance)</h5>
+            </div>
+        </div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Institute</a></li>
+            <li><a href="#">Administration</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Central Facilities</a></li>
+            <li><a href="#">Quick Links</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <div class="mnit_building"><img src="images/mnit-building.jpg" alt="MNIT Building"></div>
+        </div>
+    </section>
+
+    <div id="chatbot">
+        <iframe border-radius="20px" width="350" height="530" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/a18d31ee-f54e-4d63-86f6-085b41330dee"></iframe>
+    </div>
+
+    <div draggable="true" class="chatbot-button">
+        <p style="display: flex; gap: 5px;"><span style="font-size: large;">👋</span>Hi there! Got any questions? <br /> I can help you...</p>
+        <button onclick="toggleChatbot()"><img src="images/chatbot-button.jpg" alt="Chatbot Button"></button>
+    </div>
+
+    <script>
+        const chatbot = document.getElementById("chatbot")
+        let chatbotVisible = false
+        function toggleChatbot(){
+            if(chatbotVisible){
+                chatbot.style.display = "none";
+            }
+            else{
+                chatbot.style.display = "block";
+            }
+            chatbotVisible = !chatbotVisible
+        }
+    </script>
+
+</body>
+</html>
