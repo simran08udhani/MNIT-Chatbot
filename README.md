@@ -38,4 +38,9 @@ Simran Udhani
 
 - The project was inspired by the need for an efficient way to handle inquiries related to MNIT Jaipur.
 
+## License
+
+The MNIT Chatbot Project is licensed under the [MIT License](LICENSE).
+
+---
 Feel free to contribute, report issues, or suggest improvements!
